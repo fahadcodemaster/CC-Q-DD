@@ -1,0 +1,72 @@
+const config = process.env.REACT_APP_Q_ENV == 'production' ? 
+    {
+        // Production Config
+        cognito: { REGION: '', USER_POOL_ID: '', IDENTITY_POOL_ID: '', APP_CLIENT_ID: '' },
+        cc_apiGateway: '',
+        s3: { REGION: '', BUCKET: ''},
+        apiGateway: {
+            ENDPOINTS: [
+                {
+                    name: '', // getInfo
+                    endpoint: '',
+                    region: ''    
+                },
+                {
+                    name: '', // users
+                    endpoint: '',
+                    region: ''    
+                },
+                {
+                    name: '', // users
+                    endpoint: '',
+                    region: ''    
+                },
+                {
+                    name: '', // companies
+                    endpoint: '',
+                    region: ''    
+                },
+                {
+                    name: '', // getInfoP
+                    endpoint: '',
+                    region: ''    
+                }
+            ]
+        }
+    } : {
+        // Development Config
+        cognito: { REGION: '', USER_POOL_ID: '', IDENTITY_POOL_ID: '', APP_CLIENT_ID: '' },
+        cc_apiGateway: '',
+        s3: { REGION: '', BUCKET: ''},
+        apiGateway: {
+            ENDPOINTS: [
+                {
+                    name: '', // getInfo
+                    endpoint: '',
+                    region: ''    
+                },
+                {
+                    name: '', // users
+                    endpoint: '',
+                    region: ''    
+                },
+                {
+                    name: '', // users
+                    endpoint: '',
+                    region: ''    
+                },
+                {
+                    name: '', // companies
+                    endpoint: '',
+                    region: ''    
+                },
+                {
+                    name: '', // getInfoP
+                    endpoint: '',
+                    region: ''    
+                }
+            ]
+        }
+    }
+
+export default config;

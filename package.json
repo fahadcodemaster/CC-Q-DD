@@ -1,0 +1,79 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "description": "presentation layer that reads from reporting_db",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.61",
+    "@types/material-ui": "^0.21.8",
+    "@types/papaparse": "^5.3.7",
+    "@types/yup": "^0.29.6",
+    "@weknow/react-bubble-chart-d3": "^1.0.12",
+    "aws-amplify": "^3.0.25",
+    "cra-template-typescript": "1.0.3",
+    "d3": "3.5.17",
+    "date-fns": "^2.16.1",
+    "dotenv-cli": "^4.1.1",
+    "env-cmd": "^10.1.0",
+    "formik": "^2.1.5",
+    "moment": "^2.29.3",
+    "papaparse": "^5.3.2",
+    "react": "^16.13.1",
+    "react-bubble-chart": "^0.4.0",
+    "react-dom": "^16.13.1",
+    "react-ga": "^3.3.0",
+    "react-icons": "^4.6.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "react-vis": "^1.11.7",
+    "serve": "^13.0.2",
+    "styled-components": "^5.1.1",
+    "styled-reset": "^4.2.1",
+    "sweetalert": "^2.1.2",
+    "yup": "^0.29.3"
+  },
+  "scripts": {
+    "start:old": "HTTPS=true SSL_CRT_FILE=.cert/dev-cert.pem SSL_KEY_FILE=.cert/dev-key.pem react-scripts start",
+    "start": "react-scripts start --openssl-legacy-provider",
+    "build": "env-cmd -f .env.prod react-scripts build",
+    "build:dev": "env-cmd -f .env.dev react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/react": "^10.4.7",
+    "@types/d3": "3.5.46",
+    "@types/date-fns": "^2.6.0",
+    "@types/jest": "^26.0.8",
+    "@types/react": "^16.9.44",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-vis": "^1.11.3",
+    "@types/styled-components": "^5.1.2",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-typescript": "^2.7.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.5",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.7"
+  }
+}
